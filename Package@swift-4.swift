@@ -5,7 +5,8 @@ let package = Package(
     name: "COpenSSL",
     pkgConfig: "openssl",
     providers: [
-        .apt(["openssl libssl-dev"])
+        .apt(["openssl libssl-dev"]),
+        .brew(["openssl"])
     ],
     products: [
         .library(name: "COpenSSL", targets: ["COpenSSL"])

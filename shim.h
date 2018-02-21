@@ -15,4 +15,7 @@
 #include <openssl/pkcs12.h>
 #include <openssl/x509v3.h>
 
+__attribute__((swift_name("SSL_set_tlsext_host_name")))
+int shim_SSL_set_tlsext_host_name(const SSL *s, const char *name);
+
 #endif

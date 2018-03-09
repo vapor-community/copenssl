@@ -1,6 +1,7 @@
 #ifndef __COPENSSL_SHIM_H__
 #define __COPENSSL_SHIM_H__
 
+#include <openssl/aes.h>
 #include <openssl/conf.h>
 #include <openssl/evp.h>
 #include <openssl/err.h>
